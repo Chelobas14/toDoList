@@ -3,10 +3,11 @@ body{
   margin: 0px;
   justify-items: center;
   display: grid;
+  overflow-y: auto;
 }
 *{
   box-sizing: border-box;
-  overflow-x:hidden;
+  overflow:hidden;
 }
 button{
   background-color: #00000000;
