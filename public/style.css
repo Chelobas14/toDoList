@@ -1,0 +1,171 @@
+body{
+  background: black;
+  margin: 0px;
+  justify-items: center;
+  display: grid;
+}
+*{
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+button{
+  background-color: #00000000;
+  border: 1px solid #00000000;
+}
+.root {
+  background: #0A0A0A;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  justify-items: center;
+  display: grid;
+}
+.context-menu {
+  background-image: -moz-linear-gradient( 90deg, rgb(11,19,59) 0%,
+   rgb(11,19,59) 0%, rgb(13,33,88) 0%, rgb(43,79,255) 0%, rgb(0,115,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(11,19,59) 0%,
+   rgb(11,19,59) 0%, rgb(13,33,88) 0%, rgb(43,79,255) 0%, rgb(0,115,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(11,19,59) 0%,
+   rgb(11,19,59) 0%, rgb(13,33,88) 0%, rgb(43,79,255) 0%, rgb(0,115,255) 100%);
+  position: absolute;
+  top: 90vh;
+  width: min(660px, 90vw);
+  height: 90px;
+  border-radius: 50px;
+  z-index: 2;
+}
+.line-1, .line-2, .line-3 {
+  border-width: 3.15px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.7;
+  position: absolute;
+  left: 55px;
+  top: 31px;
+  width: 28.7px;
+  height: 0;
+  z-index: 3;
+}
+.line-2{
+  top: 42.5px;
+}
+.line-3{
+  top: 54px;
+}
+.rect-1 {
+  border-radius: 20px;
+  background-color: white;
+  opacity: 0.239;
+  position: absolute;
+  left: 40px;
+  top: 17px;
+  width: 58px;
+  height: 58px;
+  z-index: 4;
+}
+.rect-1:hover{
+  box-shadow: 0 0 10px 10px white;
+}
+.rect-1:active {
+  opacity: 1;
+  background: #a600ff;
+  box-shadow: 0 0 10px 10px #a600ff;
+  z-index: 2;
+}
+.create{
+  height: 58px;
+  width: 58px;
+  position: absolute;
+  z-index: 9;
+  left: 45%;
+  top: 15px;
+}
+.ellipse-1{
+  border-radius: 50%;
+  height: 58px;
+  width: 58px;
+  z-index: 10;
+  background: rgba(255,255,255,0.8);
+  position: absolute;
+  border: 2px solid rgba(255,255,255,0.0);
+/*  box-shadow: 0 0 10px 10px #ff0000, inset 0 0 10px 10px #ff0000;*/
+/*  border: 2px solid #fbfbfb;*/
+}  
+.ellipse-1 .plus-rect-1{
+  background-color: #0073ff;
+  height: 7px;
+  width: 50px;
+  position: absolute;
+  top: 23.5px;
+  left: 2.5px;
+  border-radius: 50px;
+}
+.ellipse-1:hover{
+  border: 2px solid rgba(255,255,255,0.0);
+  box-shadow: -1px -1px 10px 10px rgba(255,255,255,0.4),
+  1px 1px 10px 10px rgba(255,255,255,0.4);
+}
+.ellipse-1:active{
+  box-shadow: 0 0 10px 10px rgb(255, 255, 255, 1);
+  background: rgb(255, 255, 255, 1);
+  border: 2px solid rgb(255, 255, 255, 0);
+}
+.ellipse-1 .plus-rect-2{
+  background-color: #0073ff;
+  width: 7px;
+  height: 50px;
+  position: absolute;
+  left: 23.5px;
+  top: 2.5px;
+  border-radius: 50px;
+}
+.account{
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255, 0.24);
+  position: absolute;
+  left: 85%;
+  top: 17px;
+  width: 58px;
+  height: 58px;
+  z-index: 4;
+}
+.account .icon{
+  width: 50px;
+  height: 50px;
+  background-image: url(account.png);
+  opacity: 1;
+  border-radius: 50%;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.account:hover{
+  box-shadow: 0 0 10px 10px rgb(255, 255, 255, 0.24);
+}
+div .wrapper{
+  height: 100vh;
+  width: 100vw;
+}
+div .noteWrap{
+  height: 20vh;
+  width: 100vw;
+  border: 2px solid red;
+  border-radius: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+  font-size: 40px;
+  margin: 0px;
+}
+.saveChanges{
+  background-image: -moz-linear-gradient( 90deg, rgb(11,19,59) 0%,
+  rgb(11,19,59) 0%, rgb(13,33,88) 0%, rgb(43,79,255) 0%, rgb(0,115,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(11,19,59) 0%,
+  rgb(11,19,59) 0%, rgb(13,33,88) 0%, rgb(43,79,255) 0%, rgb(0,115,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(11,19,59) 0%,
+  rgb(11,19,59) 0%, rgb(13,33,88) 0%, rgb(43,79,255) 0%, rgb(0,115,255) 100%);
+  position: absolute;
+  height: 90px;
+  border-radius: 50px;
+}
