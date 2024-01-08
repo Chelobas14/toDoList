@@ -6,7 +6,7 @@ body{
 }
 *{
   box-sizing: border-box;
-  /* overflow-x: hidden; */
+  overflow-x:hidden;
 }
 button{
   background-color: #00000000;
@@ -22,13 +22,13 @@ button{
   display: grid;
 }
 .context-menu {
+  position: fixed;
   background-image: -moz-linear-gradient( 90deg, rgb(11,19,59) 0%,
    rgb(11,19,59) 0%, rgb(13,33,88) 0%, rgb(43,79,255) 0%, rgb(0,115,255) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(11,19,59) 0%,
    rgb(11,19,59) 0%, rgb(13,33,88) 0%, rgb(43,79,255) 0%, rgb(0,115,255) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(11,19,59) 0%,
    rgb(11,19,59) 0%, rgb(13,33,88) 0%, rgb(43,79,255) 0%, rgb(0,115,255) 100%);
-  position: absolute;
   top: 90vh;
   width: min(660px, 90vw);
   height: 90px;
@@ -168,4 +168,18 @@ div .noteWrap{
   position: absolute;
   height: 90px;
   border-radius: 50px;
+}
+.noteHeader{
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  top: -20px;
+}
+.noteText{
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  top: -40px;
 }

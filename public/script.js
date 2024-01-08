@@ -2,9 +2,9 @@ let loadedNotes = document.querySelectorAll("div.noteWrap");
 let loadedChange = document.querySelectorAll("div.change");
 let loadedDel = document.querySelectorAll("div.delete");
 let loadedIsReady = document.querySelectorAll("input.check-button");
-location.href = `
-  http://localhost:5000
-  `;
+if (location.href != `http://localhost:5000/`) {
+  location.href = `http://localhost:5000/`;
+}
 for (let i = 1; i <= loadedNotes.length; i++) {
   loadedChange[i - 1].onmouseover = () => {
     loadedChange[i - 1].style.background = "url('pngwing.com(3).png')";

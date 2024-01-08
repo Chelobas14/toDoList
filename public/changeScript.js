@@ -159,6 +159,6 @@ saveChanges.onclick = () => {
   location.href = `
   http://localhost:5000?text=${textField.value}
     &bg=${bgColContainer.style.background}
-    &col=${colContainer.style.color}&header=${headerInp.value || "asd"}
+    &col=${colContainer.style.background}&header=${headerInp.value || "asd"}
   `;
 };
