@@ -36,9 +36,11 @@ let index = `
 <html lang="ru">
 <head>
     <title>Documen</title>
+    <link rel="stylesheet" href="style1.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-<body>`;
+<body>
+  <div class="container">`;
 db.each(`SELECT Count(*) FROM lists`, (err, rows) => {
   for (let i = 1; i <= rows["Count(*)"]; i++) {
     db.each(`SELECT * FROM lists WHERE id==${i}`, (err, elem) => {
@@ -46,31 +48,26 @@ db.each(`SELECT Count(*) FROM lists`, (err, rows) => {
       <div class="noteWrap" id="n${elem.id}" style="background: ${elem.bgcolor}; color: ${elem.color};">
         <h1 class="noteHeader">${elem.header}</h1>
         <p class="noteText">${elem.text}</p>
-        <input class="check-button" type="checkbox">
-        <div class="change"></div>
-        <div class="delete"></div>
+        <div class="buts">
+          <div class="delete"></div>
+          <div class="change"></div>
+          <input class="check-button" type="checkbox">
+        </div>
       </div>`;
     });
   }
 });
 setTimeout(() => {
   index += `
+    </div>
       <div class="context-menu">
-          <div class="toolbar">
-              <div class="rect-1"></div>
-              <div class="line-1"></div>
-              <div class="line-2"></div>
-              <div class="line-3"></div>
-          </div>
-          <div class="create">
-              <div class="ellipse-1">
-                  <div class="plus-rect-1"></div>
-                  <div class="plus-rect-2"></div>
-              </div>
-          </div>
-          <div class="account">
-              <div class="icon"></div>
-          </div>
+        <div class="btn">
+            <div class="wrap">
+              <div class="toolbar"></div>
+              <div class="create"></div>
+              <div class="account"></div>
+            </div>
+        </div>
       </div>
       <script src="script.js"></script>
     </body>

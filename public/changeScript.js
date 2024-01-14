@@ -44,7 +44,6 @@ colors.className = "colContainers";
 document.body.append(colors);
 colors.style.width = "25vw";
 colors.style.display = "flex";
-colors.style.marginLeft = `${(100 - 25) / 2}vw`;
 
 const bgColContainer = document.createElement("div");
 colors.appendChild(bgColContainer);
