@@ -1,2 +1,13 @@
+.idea
+.idea/**/*
+
+.vscode
+
 node_modules
-database.db
+*/**/node_modules
+
+.env
+.env.local
+
+*.db
+!/todo.db
